@@ -1,0 +1,17 @@
+name: 🌟 Stage the App 🌟
+
+on:
+  pull_request:
+    types: 
+      - labeled
+
+jobs:
+  build:
+    name: 🛠️ Build and Stage
+    runs-on: ubuntu-latest
+    if: contains(github.event.pull_request.labels.*.name, 'stage')
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
