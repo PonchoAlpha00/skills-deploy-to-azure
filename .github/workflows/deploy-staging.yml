@@ -10,7 +10,7 @@ env:
   ### Replace <username> with GitHub username ###
   ###############################################
   DOCKER_IMAGE_NAME: PonchoAlpha00-azure-ttt
-  AZURE_WEBAPP_NAME: LordAtarus@hotmail.com-ttt-app
+  AZURE_WEBAPP_NAME: training-azure-cicd-ttt-app
   ###############################################
 
 jobs:
